@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Posts from "./components/Posts/Posts";
 import UserList from "./components/UserList/UserList";
 import Header from "./components/Header/Header";
+import PostModal from "./components/PostModal/PostModal";
 import './App.css';
 
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
               </div>
           </div>
         </div>
+        {/*<PostModal />*/}
       </div>
     );
   }
