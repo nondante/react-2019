@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import placeHolderImage from "../../assets/image-placeholder.svg";
+//import placeHolderImage from "../../assets/image-placeholder.svg";
 import { Card, CardImg, CardText, CardBody,
   CardTitle} from 'reactstrap';
 import "./PostCard.css";

@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import Posts from "./components/Posts/Posts";
 import UserList from "./components/UserList/UserList";
+import Header from "./components/Header/Header";
 import './App.css';
-import {Button} from 'reactstrap';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+        <Header />
         <div className="container">
           <div className="row">
               <div className="col-8">

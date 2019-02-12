@@ -1,12 +1,11 @@
 import React, { Component } from "react";
-import placeHolderImage from "../../assets/image-placeholder.svg";
-import { Media,Card, CardImg, CardText, CardBody,
-  CardTitle} from 'reactstrap';
+//import placeHolderImage from "../../assets/image-placeholder.svg";
+import { Media} from 'reactstrap';
 import "./UserCard.css";
 
 class UserCard extends Component {
   render(){
-    const {title, description, image} = this.props;
+    const {title, image} = this.props;
     return (
       // <Card  className="UserCard mb-5 flex-row flex-wrap w-100">
       //   <CardImg className="UserCard__img rounded-circle w-10" top width="10%" src={image} alt="Card image cap" />
@@ -23,7 +22,7 @@ class UserCard extends Component {
       //  </div>
       // </div>
       <Media className="UserCard mb-3 d-flex align-items-center">
-          <Media className="UserCard__img media-left" width="70" object src={image} alt="Generic placeholder image" />
+          <Media className="UserCard__img media-left" width="50" object src={image} alt="Generic placeholder image" />
         <Media body className="d-flex justify-content-start">
           <h6 className="card-title ml-2">{title}</h6>
         </Media>
