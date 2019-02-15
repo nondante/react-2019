@@ -5,7 +5,7 @@ import "./UserCard.css";
 
 class UserCard extends Component {
   render(){
-    const {title, image} = this.props;
+    const {image, email, username} = this.props;
     return (
       // <Card  className="UserCard mb-5 flex-row flex-wrap w-100">
       //   <CardImg className="UserCard__img rounded-circle w-10" top width="10%" src={image} alt="Card image cap" />
@@ -21,10 +21,11 @@ class UserCard extends Component {
       //     <p className="card-text">{description}</p>
       //  </div>
       // </div>
-      <Media className="UserCard mb-3 d-flex align-items-center">
+      <Media className="UserCard mb-3 d-flex ">
           <Media className="UserCard__img media-left" width="50" object src={image} alt="Generic placeholder image" />
-        <Media body className="d-flex justify-content-start">
-          <h6 className="card-title ml-2">{title}</h6>
+        <Media body className="text-left">
+          <h6 className="card-title ml-2 d-block">{username}</h6>
+          <p className="ml-2 d-block">{email}</p>
         </Media>
       </Media>
     )

@@ -14,12 +14,12 @@ class UserList extends Component {
   render(){
     return (
       <div className="UserList">
-      { users.map((user, i) => (
+      { this.props.users && this.props.users.map((user, i) => (
         <UserCard
-          key = {i}
-          title={user.title}
-          description={user.description}
-          image = {user.image}
+          key = {`userCard${i}`}
+          username={user.username}
+          email={user.email}
+         image = {placeHolderImage}
         />
       )) }
       </div>

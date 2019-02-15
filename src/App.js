@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import Posts from "./components/Posts/Posts";
-import UserList from "./components/UserList/UserList";
-import Header from "./components/Header/Header";
-import PostModal from "./components/PostModal/PostModal";
+import Posts from "./containers/PostsContainer";
+import UserList from "./containers/UserListContainer";
+import Header from "./containers/HeaderContainer";
 import './App.css';
 
 class App extends Component {
